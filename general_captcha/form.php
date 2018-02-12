@@ -21,7 +21,7 @@ if (isset($_REQUEST['authcode'])) {
     <body>
         <form action="form.php" method="post">
             验证码图片：
-            <img id="captcha_img" border="1" src="./CAPTCHA.php?r=<?php echo rand(); ?>" width="100px"/>
+            <img id="captcha_img" border="1" src="captcha.php?r=<?php echo rand(); ?>" width="100px"/>
             <a href="javascript:void(0)" onclick="document.getElementById('captcha_img').src='./CAPTCHA.php?r='+Math.random()">换一个？</a><br/>
             请输入图片内容：
             <input type="text" name="authcode"/><br/>
