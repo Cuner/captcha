@@ -10,7 +10,7 @@ $table = array(
 $index = rand(0, 3);
 $value = $table['pic' . $index];
 $_SESSION['authcode'] = $value;
-$filename = dirname(__FILE__) . '\\pic' . $index . '.jpg';
+$filename = dirname(__FILE__) . '/pic' . $index . '.jpg';
 $content = file_get_contents($filename);
 
 header('content-type:image/jpg');
